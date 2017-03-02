@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spin-ui demo</title>
+	<link rel="stylesheet" type="text/css" href="spin.css">
+</head>
+<body>
+
+	<div class="spin-container">
+		<div class="spin-container-left">
+			<div class="spin-container-left-links">
+				<div> <a href="" onclick="grow()"> DASH </a> </div>
+				<div> <a href="" onclick="shrink()"> CLEAR </a> </div>
+				<div> <a href=""> SETTINGS </a> </div>
+			</div>
+		</div>
+
+		<div class="spin-container-right">
+			<textarea onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'    '+v.substring(e);this.selectionStart=this.selectionEnd=s+4;return false;}" id="spin-text-area" name="moreinfo" cols="60" rows="10" required="required" placeholder="start typing..."></textarea>
+		</div>
+	</div>
+
+</body>
+</html>

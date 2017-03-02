@@ -1,0 +1,97 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.spin-container{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: row;
+}
+
+.spin-container-left{
+	display: flex;
+	width: 250px;
+	flex-direction: column;
+	justify-content: stretch;
+	position: relative;
+	padding-top: 60px;
+	height: auto;
+	overflow: wrap;
+	background-color: #181818;
+	transition: filter 0.5s;
+}
+
+.spin-container-left:hover{
+	filter: drop-shadow(0px 0px 10px #000);
+	transition: filter 0.5s;
+
+}
+
+.spin-container-left-links{
+	display: flex;
+	flex-direction: column;
+}
+
+.spin-container-left-links > div{
+	width: 100%;
+	background-color: #181818;
+/*	padding-top: 5px;
+	padding-bottom: 5px;*/
+}
+
+.spin-container-left-links > div:hover{
+	width: 100%;
+	background-color: #282828;
+/*	padding-top: 5px;
+	padding-bottom: 5px;*/
+}
+
+.spin-container-left-links > div:active{
+	width: 100%;
+	background-color: orange;
+/*	padding-top: 5px;
+	padding-bottom: 5px;*/
+}
+
+.spin-container-left-links a{
+	display: flex;
+	font-family: monospace;
+	text-decoration: none;
+	padding-left: 10px;
+	color: #f8f8f8;
+	width: 100%;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.spin-container-left-links a:active{
+	color: #181818;
+}
+
+.spin-container-left-links a:focus{
+	outline: none;
+}
+
+.spin-container-right{
+	display: flex;
+	flex-grow: 1;
+	background-color: orange;
+}
+
+#spin-text-area{
+	width:100%;
+	font-size: 20px;
+	background-color: #282828;
+	color: #f8f8f8;
+	border: none;
+	padding: 5px;
+}
+
+.huge{
+	width:100vw;
+	display: flex;
+	flex-grow: 1000;
+}
