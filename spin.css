@@ -163,13 +163,24 @@
 .spin-container-right{
 	display: flex;
 	flex-grow: 1;
-	background-color: orange;
+	background-color: #181818;
 	width: 100%;
 	transition: width 1s;
 }
 
 #spin-text-area{
 	width:100%;
+	opacity: 0.8;
+	font-size: 20px;
+	background-color: #282828;
+	color: #f8f8f8;
+	border: none;
+	padding: 5px;
+}
+
+#spin-text-area:focus{
+	width:100%;
+	opacity: 1;
 	font-size: 20px;
 	background-color: #282828;
 	color: #f8f8f8;

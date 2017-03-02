@@ -12,7 +12,7 @@
 		<div class="spin-container-left" id="scl">
 
 			<div class="spin-container-left-links">
-				<div> <a href="javascript:void(0)" onclick="resize();" class="plusButton"> + </a> </div>
+				<div> <a id="plusbutton" href="javascript:void(0)" onclick="resize();" class="plusButton"> + </a> </div>
 				<div> <a href="javascript:void(0)" onclick="clearSpinTextArea();"> CLEAR </a> </div>
 			</div>
 
@@ -24,7 +24,7 @@
 
 
 		<div class="spin-container-right" id="scr">
-			<textarea onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'    '+v.substring(e);this.selectionStart=this.selectionEnd=s+4;return false;}" id="spin-text-area" name="moreinfo" placeholder="start typing..."></textarea>
+			<textarea onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'    '+v.substring(e);this.selectionStart=this.selectionEnd=s+4;return false;}" id="spin-text-area" name="moreinfo" placeholder="Spin - A hackable text editor for the modern web"></textarea>
 		</div>
 
 	</div>

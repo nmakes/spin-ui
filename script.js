@@ -3,11 +3,13 @@ var sidebar = {open:'false'};
 function resize(){
 	if(sidebar.open=='false')
 	{
+		document.getElementById('plusbutton').innerHTML = '-';
 		document.getElementById('scl').setAttribute('class', 'huge');
 		sidebar.open='true';
 	}
 	else if(sidebar.open=='true')
 	{
+		document.getElementById('plusbutton').innerHTML = '+';
 		document.getElementById('scl').setAttribute('class', 'spin-container-left');
 		sidebar.open='false';
 	}
