@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>spin-ui demo</title>
+	<title>spin-ui editor</title>
 	<link rel="stylesheet" type="text/css" href="spin.css">
-	<script type="text/javascript" src="script.js"> </script>
+	<meta charset="UTF-8"> 
 </head>
 <body>
 
@@ -24,10 +24,10 @@
 
 
 		<div class="spin-container-right" id="scr">
-			<textarea onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'    '+v.substring(e);this.selectionStart=this.selectionEnd=s+4;return false;}" id="spin-text-area" name="moreinfo" placeholder="Spin - A hackable text editor for the modern web"></textarea>
+			<textarea id="spin-text-area" name="moreinfo" placeholder="Spin - A hackable text editor for the modern web"></textarea>
 		</div>
 
 	</div>
-
+<script type="text/javascript" src="script.js"> </script>
 </body>
 </html>
